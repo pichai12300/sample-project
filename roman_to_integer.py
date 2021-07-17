@@ -1,4 +1,4 @@
-def main(roman):
+def roman_to_integer(roman):
     roman_dict = {
         "I": 1,
         "V": 5,
@@ -9,7 +9,6 @@ def main(roman):
         "M": 1000
     }
 
-    previous = 0
     total = 0
     for i in range(len(roman)):
         value = roman_dict[roman[i]]
@@ -25,5 +24,5 @@ def main(roman):
 if __name__ == '__main__':
     roman = input("Enter a roman number for convert to integer: ")
 
-    convert_roman = main(roman)
+    convert_roman = roman_to_integer(roman)
     print(convert_roman)
